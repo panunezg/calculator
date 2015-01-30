@@ -6,6 +6,8 @@
 
 package co.edu.bosque.swii.calculator.calculator;
 
+import java.util.Scanner;
+
 /**
  *
  * @author pablo
@@ -16,6 +18,18 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int number1,number2;
+        Scanner scanner = new Scanner(System.in);
+         System.out.println("ingresar numero :");
+        number1= scanner.nextInt();
+        System.out.println("ingresar numero :");
+        number2= scanner.nextInt();
+        Calculador c = new Calculador();
+        System.out.println(c.sumar(number1, number2));
+         System.out.println(c.restar(number1, number2));
+         System.out.println(c.multiplicar(number1, number2));
+         System.out.println(c.dividir(number1, number2));
+        
     }
    
 }

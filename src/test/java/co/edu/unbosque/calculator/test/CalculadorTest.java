@@ -51,23 +51,20 @@ public class CalculadorTest {
         double expResult = 6.0;
         double result = instance.sumar(numero1, numero2);
         System.out.println(result);
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
+        assertEquals(expResult, result, result);
+    }  
     /**
      * Test of restar method, of class Calculador.
      */
     @Test
-    public void testRestar() {
+    public void testRestar(){
         System.out.println("restar");
-        double numero1 = 6.0;
-        double numero2 = 4.0;
-        Calculador instance = new Calculador();
-        double expResult = 2.0;
-        double result = instance.restar(numero1, numero2);
-        assertEquals(expResult, result, 0.0);
+        double numero4 = 6.0;
+        double numero5 = 4.0;
+        Calculador instance1 = new Calculador();
+        double expResult1 = 2.0;
+        double result1 = instance1.restar(numero4, numero5);
+        assertEquals(expResult1, result1, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -87,7 +84,7 @@ public class CalculadorTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-
+    
     /**
      * Test of dividir method, of class Calculador.
      */
@@ -103,5 +100,4 @@ public class CalculadorTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
 }
